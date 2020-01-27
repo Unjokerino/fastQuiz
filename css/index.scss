@@ -17,7 +17,7 @@ body {
     height: 100vh;
     align-items: center;
     justify-content: center;
-    width: 500px;
+
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -39,6 +39,7 @@ h3 {
 .datepicker {}
 
 button {
+    max-width: 500px;
     text-transform: uppercase;
     cursor: pointer;
     width: 80%;

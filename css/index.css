@@ -96,7 +96,6 @@ button {
   position: fixed;
   z-index: 1;
   margin: auto;
-  min-width: 500px;
   bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,7 +106,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 17px;
+  font-size: 2vh;
 }
 
 #snackbar span {

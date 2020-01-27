@@ -27,14 +27,13 @@ incPage = () => {
     });
     loader = document.createElement("div");
     loader.classList.add("loader");
-    loader.innerHTML = `<div id='c'>
-    <div class='s'></div>
-  </div>`;
+    
+    loader.innerHTML = `<img id='animation' src='./media/animation.gif'>`;
     document.querySelector(".container").innerHTML = "";
     document.querySelector(".container").append(loader);
 
     setTimeout(() => {
-      document.querySelector("#c").remove();
+      document.querySelector("#animation").remove();
       showSnackBar(
         "К сожалению рядом с вами никого не найдено, попробуйте позже!"
       );

@@ -14,12 +14,13 @@ body {
 }
 
 .container {
+  height: 100vh;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 500px;
   margin: auto;
   display: -webkit-box;
@@ -27,8 +28,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 h3 {
@@ -69,11 +70,11 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   bottom: 0;
   left: 0;
   right: 0;
@@ -107,32 +108,36 @@ button {
 @-webkit-keyframes r5 {
   0% {
     -webkit-box-shadow: 0 0 8px 6px rgba(93, 204, 231, 0.5), 0 0 0px 0px transparent, 0 0 0px 0px rgba(93, 204, 231, 0.7);
-            box-shadow: 0 0 8px 6px rgba(93, 204, 231, 0.5), 0 0 0px 0px transparent, 0 0 0px 0px rgba(93, 204, 231, 0.7);
+    box-shadow: 0 0 8px 6px rgba(93, 204, 231, 0.5), 0 0 0px 0px transparent, 0 0 0px 0px rgba(93, 204, 231, 0.7);
   }
+
   10% {
     -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    transform: scale(1, 1);
     -webkit-box-shadow: 0 0 8px 6px rgba(93, 204, 231, 0.5), 0 0 12px 10px transparent, 0 0 12px 14px rgba(93, 204, 231, 0.7);
-            box-shadow: 0 0 8px 6px rgba(93, 204, 231, 0.5), 0 0 12px 10px transparent, 0 0 12px 14px rgba(93, 204, 231, 0.7);
+    box-shadow: 0 0 8px 6px rgba(93, 204, 231, 0.5), 0 0 12px 10px transparent, 0 0 12px 14px rgba(93, 204, 231, 0.7);
   }
+
   100% {
     -webkit-box-shadow: 0 0 8px 6px rgba(26, 140, 255, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(26, 140, 255, 0);
-            box-shadow: 0 0 8px 6px rgba(26, 140, 255, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(26, 140, 255, 0);
+    box-shadow: 0 0 8px 6px rgba(26, 140, 255, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(26, 140, 255, 0);
   }
 }
 
 @keyframes r5 {
   0% {
     -webkit-box-shadow: 0 0 8px 6px #5dcce7, 0 0 0px 0px transparent, 0 0 0px 0px #5dcce7;
-            box-shadow: 0 0 8px 6px #5dcce7, 0 0 0px 0px transparent, 0 0 0px 0px #5dcce7;
+    box-shadow: 0 0 8px 6px #5dcce7, 0 0 0px 0px transparent, 0 0 0px 0px #5dcce7;
   }
+
   10% {
     -webkit-box-shadow: 0 0 8px 6px #5dcce7, 0 0 12px 10px transparent, 0 0 12px 14px #5dcce7;
-            box-shadow: 0 0 8px 6px #5dcce7, 0 0 12px 10px transparent, 0 0 12px 14px #5dcce7;
+    box-shadow: 0 0 8px 6px #5dcce7, 0 0 12px 10px transparent, 0 0 12px 14px #5dcce7;
   }
+
   100% {
     -webkit-box-shadow: 0 0 8px 6px rgba(26, 140, 255, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(26, 140, 255, 0);
-            box-shadow: 0 0 8px 6px rgba(26, 140, 255, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(26, 140, 255, 0);
+    box-shadow: 0 0 8px 6px rgba(26, 140, 255, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(26, 140, 255, 0);
   }
 }
 
@@ -164,6 +169,7 @@ button {
     bottom: 0;
     opacity: 0;
   }
+
   to {
     bottom: 30px;
     opacity: 1;
@@ -175,6 +181,7 @@ button {
     bottom: 0;
     opacity: 0;
   }
+
   to {
     bottom: 30px;
     opacity: 1;
@@ -186,6 +193,7 @@ button {
     bottom: 30px;
     opacity: 1;
   }
+
   to {
     bottom: 0;
     opacity: 0;
@@ -197,9 +205,11 @@ button {
     bottom: 30px;
     opacity: 1;
   }
+
   to {
     bottom: 0;
     opacity: 0;
   }
 }
+
 /*# sourceMappingURL=index.css.map */

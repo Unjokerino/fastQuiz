@@ -1,0 +1,210 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Regular.ttf") format("ttf"),
+}
+
+
+body {
+    font-family: 'Roboto';
+    margin: 0;
+    background: rgb(60, 140, 251);
+    background: linear-gradient(180deg, rgba(60, 140, 251, 1) 0%, rgba(160, 243, 104, 1) 100%);
+    height: 100vh;
+    color: #295659;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    text-align: center;
+}
+
+.page {
+    display: none;
+}
+
+.container_item {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.datepicker {}
+
+button {
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 80%;
+    background: #d91c5b;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    margin-top: 10px;
+
+}
+
+#repeat {
+    width: 500px;
+}
+
+.loader {
+    position: absolute;
+    /* width: 100%; */
+    /* height: 100vh; */
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+}
+
+.text_inp {
+    border: none;
+    background: none;
+    border-bottom: 1px solid black;
+}
+
+#c {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.s {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    float: left;
+    background: #5dcce7;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    -webkit-animation: r5 1s 0s ease-out infinite;
+    -moz-animation: r5 1s 0s ease-out infinite;
+    animation: r5 1s 0s ease-out infinite;
+}
+
+@-webkit-keyframes r5 {
+    0% {
+        box-shadow: 0 0 8px 6px rgba(93, 204, 231, .5), 0 0 0px 0px transparent, 0 0 0px 0px rgba(93, 204, 231, .7);
+    }
+
+    10% {
+        transform: scale(1, 1);
+        box-shadow: 0 0 8px 6px rgba(93, 204, 231, .5), 0 0 12px 10px transparent, 0 0 12px 14px rgba(93, 204, 231, .7);
+    }
+
+    100% {
+        box-shadow: 0 0 8px 6px rgba(26, 140, 255, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(26, 140, 255, 0);
+    }
+}
+
+@-moz-keyframes r5 {
+    0% {
+        box-shadow: 0 0 8px 6px rgb(93, 204, 231), 0 0 0px 0px transparent, 0 0 0px 0px rgb(93, 204, 231);
+    }
+
+    10% {
+        box-shadow: 0 0 8px 6px rgb(93, 204, 231), 0 0 12px 10px transparent, 0 0 12px 14px rgb(93, 204, 231);
+    }
+
+    100% {
+        box-shadow: 0 0 8px 6px rgba(26, 140, 255, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(26, 140, 255, 0);
+    }
+}
+
+@keyframes r5 {
+    0% {
+        box-shadow: 0 0 8px 6px rgb(93, 204, 231), 0 0 0px 0px transparent, 0 0 0px 0px rgb(93, 204, 231);
+    }
+
+    10% {
+        box-shadow: 0 0 8px 6px rgb(93, 204, 231), 0 0 12px 10px transparent, 0 0 12px 14px rgb(93, 204, 231);
+    }
+
+    100% {
+        box-shadow: 0 0 8px 6px rgba(26, 140, 255, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(26, 140, 255, 0);
+    }
+}
+
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    margin: auto;
+    min-width: 500px;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}

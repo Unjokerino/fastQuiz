@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Опросник</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <link href="css/datepicker.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/datepicker.min.js"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <script defer src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page" id="page_0" style="display: flex;">
+        <div class="page_container">
+          <h3>
+            Ваш пол
+          </h3>
+          <div class="container_item">
+            <input type="radio" name="page_1_check" id="check_1" /><label
+              for="check_1"
+              >Мужчина</label
+            >
+          </div>
+          <div class="container_item">
+            <input type="radio" name="page_1_check" id="check_2" /><label
+              for="check_2"
+              >Женищна</label
+            >
+          </div>
+        </div>
+      </div>
+      <div class="page" id="page_1">
+        <h3>
+          Введите дату рождения
+        </h3>
+        <div class="datepicker-here"></div>
+      </div>
+
+      <div class="page" id="page_2">
+        <h3>
+          Введите ваше имя
+        </h3>
+        <input type="text" name="" id="" class="text_inp" />
+      </div>
+      <div class="page" id="page_3">
+        <h3>
+          Введите ваш email
+        </h3>
+        <input type="email" name="" id="" class="text_inp" />
+      </div>
+      <div class="page" id="page_4">
+        <h3>
+          Кого вы хотите найти?
+        </h3>
+        <div class="container_item">
+          <input type="radio" name="page_4_check" id="page_4_check_1" /><label
+            for="page_4_check_1"
+            >Мужчина</label
+          >
+        </div>
+        <div class="container_item">
+          <input type="radio" name="page_4_check" id="page_4_check_2" /><label
+            for="page_4_check_2"
+            >Женищна</label
+          >
+        </div>
+      </div>
+      <div class="page" id="page_5">
+        <h3>
+          Выберите ваше образование
+        </h3>
+        <div class="container_item">
+          <input type="radio" name="page_5_check" id="page_5_check_1" /><label
+            for="page_5_check_1"
+            >Среднее</label
+          >
+        </div>
+        <div class="container_item">
+          <input type="radio" name="page_5_check" id="page_5_check_2" /><label
+            for="page_5_check_2"
+            >Средне-специальное</label
+          >
+        </div>
+        <div class="container_item">
+          <input type="radio" name="page_5_check" id="page_5_check_3" /><label
+            for="page_5_check_3"
+            >Высшее</label
+          >
+        </div>
+      </div>
+      <div class="page" id="page_6">
+        <h3>
+          У вас есть автомобиль?
+        </h3>
+        <div class="container_item">
+          <input type="radio" name="page_6_check" id="page_6_check_1" /><label
+            for="page_6_check_1"
+            >Да</label
+          >
+        </div>
+        <div class="container_item">
+          <input type="radio" name="page_6_check" id="page_6_check_2" /><label
+            for="page_6_check_2"
+            >Нет</label
+          >
+        </div>
+      </div>
+      <div class="page" id="page_7">
+        <h3>
+          Для каких целей вы ищите партнера?
+        </h3>
+        <div class="container_item">
+          <input type="radio" name="page_7_check" id="page_7_check_1" /><label
+            for="page_7_check_1"
+            >Любовь</label
+          >
+        </div>
+        <div class="container_item">
+          <input type="radio" name="page_7_check" id="page_7_check_2" /><label
+            for="page_7_check_2"
+            >Дружба</label
+          >
+        </div>
+        <div class="container_item">
+          <input type="radio" name="page_7_check" id="page_7_check_3" /><label
+            for="page_7_check_3"
+            >Общение</label
+          >
+        </div>
+      </div>
+      <div class="page" id="page_8">
+        <h3>
+          Вы любите ходить в кино?
+        </h3>
+        <div class="container_item">
+          <input type="radio" name="page_8_check" id="page_8_check_1" /><label
+            for="page_8_check_1"
+            >Да</label
+          >
+        </div>
+        <div class="container_item">
+          <input type="radio" name="page_8_check" id="page_8_check_2" /><label
+            for="page_8_check_2"
+            >Нет</label
+          >
+        </div>
+      </div>
+      <button id="next">Дальше</button>
+    </div>
+    <div id="snackbar"></div>
+  </body>
+</html>
